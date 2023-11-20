@@ -141,42 +141,7 @@ input[type="file"] {
   font-weight: bold;
 }
 
-.tagbtn {
-  padding: 5px 0;
-  font-weight: 400;
-  font-size: 0.8rem;
-  border-radius: 25px;
-  text-align: center;
-  transition: 0.5s;
-  background: rgba(0, 0, 0, 0);
-}
 
-.tagbtn:hover {
-  background: #efefef;
-}
-
-.main-text-center {
-  text-align: center;
-  margin-bottom: 64px;
-}
-
-.main-text-center h2 {
-  margin-bottom: 4px;
-}
-
-.scrollbar::-webkit-scrollbar {
-  height: 8px;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background: rgb(63, 56, 57);
-  border-radius: 10px;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  background: rgba(100, 37, 49, 0.1);
-  border-radius: 10px;
-}
 
 /*start*/
 
