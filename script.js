@@ -30,7 +30,9 @@ function includeHTML() {
             elmnt.innerHTML = "Page not found.";
           }
 
-          // -------------------------------------------------------------------------
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+
           //내비
           let openss = document.querySelector("#opens");
           openss.addEventListener("click", function () {
@@ -44,46 +46,43 @@ function includeHTML() {
             document.querySelector("#opens").style.opacity = "1";
           });
 
-          //롤링
-          $(document).ready(function () {
-            var height = $(".roll-top").height();
-            var num = $(".rolling li").length;
-            var max = height * num;
-            var move = 0;
-    
-            function noticeRolling() {
-              move += height;
-              $(".rolling").animate({
-                "top": -move
-              }, 600, function () {
-                if (move >= max) {
-                  $(this).css("top", 0);
-                  move = 0;
-                };
-              });
-            };
-            noticeRollingOff = setInterval(noticeRolling, 1000);
-            $(".rolling").append($(".rolling li").first().clone());
-    
-            $(".rolling_stop").click(function () {
-              clearInterval(noticeRollingOff);
-            });
-            $(".rolling_start").click(function () {
-              noticeRollingOff = setInterval(noticeRolling, 1500);
-            });
-          });
-  
-
         }
+
       }
       xhttp.open("GET", file, true);
       xhttp.send();
       /*exit the function:*/
-      // -------------------------------------------------------------------------
-      // -------------------------------------------------------------------------
+
       return;
     }
-  }
+  } //롤링
+  $(document).ready(function () {
+    var height = $(".roll-top").height();
+    var num = $(".rolling li").length;
+    var max = height * num;
+    var move = 0;
+
+    function noticeRolling() {
+      move += height;
+      $(".rolling").animate({
+        "top": -move
+      }, 600, function () {
+        if (move >= max) {
+          $(this).css("top", 0);
+          move = 0;
+        };
+      });
+    };
+    noticeRollingOff = setInterval(noticeRolling, 1000);
+    $(".rolling").append($(".rolling li").first().clone());
+
+    $(".rolling_stop").click(function () {
+      clearInterval(noticeRollingOff);
+    });
+    $(".rolling_start").click(function () {
+      noticeRollingOff = setInterval(noticeRolling, 1500);
+    });
+  });
 };
 
 
