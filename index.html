@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+
+  <title>Document</title>
+  <!--구글폰트 아이콘-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--sns아이콘-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!--스와이퍼-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!---롤링-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!---제이쿼리 연결-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+  <!---w3-->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- header -->
+  <div w3-include-html="header.html"></div>
+
+  <div id="sidebar">
+
+    <div class="side-btn box" onclick="show()">
+      <span class="material-symbols-outlined" id="side-btn1">
+        arrow_back_ios
+      </span>
+    </div>
+    <div class="side-conts">
+      <div>
+        <h6>Quick Menu
+        </h6>
+      </div>
+      <div>
+        <b>최근 본 차량<br></b>
+        <span class="material-symbols-outlined">
+          sentiment_dissatisfied
+        </span>
+        <p>최근 본 차량이<br>
+          없습니다.</p>
+      </div>
+      <div>
+        <button>시승신청</button>
+        <p>고객센터</p>
+        <p>080-600-6000</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <main>
+
+    <div class="swiper-container swiper1 ">
+      <div class="swiper-wrapper swiper-1">
+        <div class="swiper-slide mains mains1">
+          <div>
+            <div>
+              <p>일상과 일상 사이의</p>
+              <h1>NEW LIFE</h1>
+              <p>완전히 새로운 상품성과 차별화된 감성으로<br>일상과 아웃도어를 넘나드는 새로운 라이프를 제시합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mains mains2">
+          <div>
+            <div>
+              <p>지금, 더 매력적인</p>
+              <h1>The new AVANTE Hybrid</h1>
+              <a class="a-basic">자세히 보기&nbsp;❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mains mains3">
+          <div>
+            <div>
+              <p>당신만의 특별한 공간</p>
+              <h1>TUCSON</h1>
+              <a class="a-basic">자세히 보기&nbsp;❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mains mains4">
+          <div>
+            <div>
+              <p>당신의 모든 세상</p>
+              <h1>PALISADE</h1>
+              <a class="a-basic">자세히 보기&nbsp;❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide mains mains5">
+          <div>
+            <div>
+              <p>내가 만드는 세상
+              </p>
+              <h1>IONIQ 6</h1>
+              <a class="a-basic">자세히 보기&nbsp;❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-second">
+      <div>
+        <h6>빠른 차량 검색</h6>
+        <input type="text" placeholder=" 차량명을 입력하세요">
+      </div>
+      <div>
+        <button>견적내기</button>
+        <button> 시승신청 </button>
+        <button> 구매혜택 </button>
+        <button> 정비신청</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!--스와이퍼-->
+  <script>
+    new Swiper('.swiper1', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      debugger: true,
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination2",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+
+
+  <article class="price">
+
+    <div class="main-text-center">
+      <h2>이 달의 구매 혜택</h2>
+      <p>※ 차량별 가격은 최다 판매 트림 기준입니다.
+      </p>
+    </div>
+
+    <div class="scrollbar">
+      <section>
+        <div></div>
+        <div class="car-price">
+          <div>
+            <h4>The all-new SANTA FE</h4>
+            <p>3,546 만원 부터<span class="span-small">&nbsp;(최대할인 100만)</span></p>
+          </div>
+          <div><a>❯</a></div>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
+        <div class="car-price">
+          <div>
+            <h4>IONIQ 6</h4>
+            <p>5,250 만원 부터<span class="span-small">&nbsp;(최대할인 124만)</span></p>
+          </div>
+          <a>❯</a>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
+        <div class="car-price">
+          <div>
+            <h4>IONIQ 5 N</h4>
+            <p>7,060 만원 부터<span class="span-small">&nbsp;(최대할인 320만)</span></p>
+          </div>
+          <a>❯</a>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
+        <div class="car-price">
+          <div>
+            <h4>CASPER</h4>
+            <p>1,246 만원 부터<span class="span-small">&nbsp;(최대할인 105만)</span></p>
+          </div>
+          <a>❯</a>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
+        <div class="car-price">
+          <div>
+            <h4>The new AVANTE N</h4>
+            <p>33,520,000원 부터<span class="span-small">&nbsp;(최대할인 105만)</span></p>
+          </div>
+          <a>❯</a>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="price-pc">
+      <section>
+        <div></div>
+        <div>
+          <div>
+            <h4>The all-new SANTA FE</h4>
+            <p>3,546 만원 부터<span class="span-small">&nbsp;(최대할인 100만)</span></p>
+          </div>
+          <div><a>❯</a></div>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
+        <div>
+          <div>
+            <h4>IONIQ 6</h4>
+            <p>5,250 만원 부터<span class="span-small">&nbsp;(최대할인 124만)</span></p>
+          </div>
+          <a>❯</a>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
+        <div>
+          <div>
+            <h4>IONIQ 5 N</h4>
+            <p>7,060 만원 부터<span class="span-small">&nbsp;(최대할인 320만)</span></p>
+          </div>
+          <a>❯</a>
+        </div>
+        <div>
+          <button class="prices">혜택보기&nbsp;❯</button>
+          <button class="prices">견적내기&nbsp;❯</button>
+        </div>
+      </section>
+    </div>
+
+  </article>
+
+
+  <article class="event">
+
+    <div class="main-text-center">
+      <h2>Model</h2>
+      <div class="flex_center">
+        <div class="eTab checked">
+          <h6>전기차</h6>
+        </div>
+        <div class="eTab">
+          <h6>그랜저</h6>
+        </div>
+        <div class="eTab">
+          <h6>SUV</h6>
+        </div>
+        <div class="eTab">
+          <h6>쏘나타</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex_sb" id="cani">
+      <section class="leftSection">
+        <form action="">
+          <div>
+            <h3>할부 계산기</h3>
+            <p>아이오닉 6| 전기 | 프레스티지</p>
+          </div>
+          <h5>선수금</h5>
+          <div class="range_box flex_sb">
+            <div class="range_money">
+              <input class="rangeMoney" type="range" name="money" id="money" min="62" max="2880" value="2880" step="1">
+              <span class="span-small">62만원</span>
+              <span class="span-small">2,880만원</span>
+            </div>
+            <div class="range_read">
+              <input class="rangeRead" type="text" value="2880" readonly>
+              만원
+            </div>
+          </div>
+          <h5>할부기간</h5>
+          <div class="range_box flex_sb">
+            <div class="range_month">
+              <input class="rangeMonth" type="range" min="0" max="5" step="1" value="5">
+              <span class="span-small">3개월</span>
+              <span class="span-small">60개월</span>
+            </div>
+            <div class="range_seb">
+              <input class="rangeSeb" type="text" value="60" readonly>
+              개월
+            </div>
+          </div>
+        </form>
+        <button class="calc-btn" onclick="javascript:btnPay()">계산하기</button>
+      </section>
+      <section class="rightSection">
+        <form action="">
+          <div>
+            <h3>모델 비교</h3>
+            <p>IONIQ 6 | 전기 | 프레스티지</p>
+          </div>
+          <div class="flex_sb">
+            <div>
+              <h5>가격</h5>
+              <h6>31,800,000원</h6>
+              <h5>복합 연비</h5>
+              <h6>9.1 km/ℓ</h6>
+              <h5>최고 출력</h5>
+              <h6>168kW / 299PS</h6>
+              <h5>구동타입</h5>
+              <h6>AWD</h6>
+              <h5>3년 유지비</h5>
+              <h6>12,920,871원</h6>
+            </div>
+            <div class="fileplus" onclick="document.getElementById('file').click();">
+              <div>
+                <span class="material-symbols-outlined">
+                  add_circle
+                </span>
+                <p>비교할 모델을 추가해주세요</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <input type="file" id="file" name="file" style="display:none;" />
+
+    <div class="flex_sb" id="ssona">
+      <section class="leftSection">
+        <form action="">
+          <div>
+            <h3>할부 계산기</h3>
+            <p>디올 뉴 그랜저 | 가솔린 2.5 | 프리미엄</p>
+          </div>
+          <h5>선수금</h5>
+          <div class="range_box flex_sb">
+            <div class="range_money">
+              <input class="rangeMoney1" type="range" name="money" id="money" min="32" max="3660" value="3660" step="1">
+              <span class="span-small">32만원</span>
+              <span class="span-small">4,180만원</span>
+            </div>
+            <div class="range_read">
+              <input class="rangeRead1" type="text" value="4180" readonly>
+              만원
+            </div>
+          </div>
+          <h5>할부기간</h5>
+          <div class="range_box flex_sb">
+            <div class="range_month">
+              <input class="rangeMonth1" type="range" min="0" max="5" step="1" value="5">
+              <span class="span-small">3개월</span>
+              <span class="span-small">60개월</span>
+            </div>
+            <div class="range_seb">
+              <input class="rangeSeb1" type="text" value="60" readonly>
+              개월
+            </div>
+          </div>
+        </form>
+        <button class="calc-btn" onclick="btnPay()">계산하기</button>
+      </section>
+      <section class="rightSection">
+        <form action="">
+          <div>
+            <h3>모델 비교</h3>
+            <p>디올 뉴 그랜저 | 가솔린 2.5 | 프리미엄</p>
+          </div>
+          <div class="flex_sb">
+            <div>
+              <h5>가격</h5>
+              <h6>41,800,000원</h6>
+              <h5>복합 연비</h5>
+              <h6>15.1 km/ℓ</h6>
+              <h5>최고 출력</h5>
+              <h6>300 PS / 6,400 rpm</h6>
+              <h5>최대 토크</h5>
+              <h6>36.6 kgf·m / 5,000 rpm</h6>
+              <h5>3년 유지비</h5>
+              <h6>9,920,871원</h6>
+            </div>
+            <div class="fileplus" onclick="document.getElementById('file').click();">
+              <div>
+                <span class="material-symbols-outlined">
+                  add_circle
+                </span>
+                <p>비교할 모델을 추가해주세요</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="flex_sb" id="spo">
+      <section class="leftSection">
+        <form action="">
+          <div>
+            <h3>할부 계산기</h3>
+            <p>펠리세이드 | 디젤 2.2 | 트렌디</p>
+          </div>
+          <h5>선수금</h5>
+          <div class="range_box flex_sb">
+            <div class="range_money">
+              <input class="rangeMoney2" type="range" name="money" id="money" min="32" max="4780" value="4780" step="1">
+              <span class="span-small">32만원</span>
+              <span class="span-small">4,780만원</span>
+            </div>
+
+            <div class="range_read">
+              <input class="rangeRead2" type="text" value="4780" readonly>
+              만원
+            </div>
+          </div>
+          <h5>할부기간</h5>
+          <div class="range_box flex_sb">
+            <div class="range_month">
+              <input class="rangeMonth2" type="range" min="0" max="5" step="1" value="5">
+              <span class="span-small">3개월</span>
+              <span class="span-small">60개월</span>
+            </div>
+            <div class="range_seb">
+              <input class="rangeSeb2" type="text" value="60" readonly>
+              개월
+            </div>
+          </div>
+        </form>
+        <button class="calc-btn" onclick="btnPay()">계산하기</button>
+      </section>
+
+      <section class="rightSection">
+        <form action="">
+          <div>
+            <h3>모델 비교</h3>
+            <p>펠리세이드 | 디젤 2.2 | 트렌디</p>
+          </div>
+          <div class="flex_sb">
+            <div>
+              <h5>가격</h5>
+              <h6>30,000,000원</h6>
+              <h5>복합 연비</h5>
+              <h6> 12.4 km/ℓ</h6>
+              <h5>최고 출력</h5>
+              <h6>1295 PS / 6,000 rpm</h6>
+              <h5>최대 토크</h5>
+              <h6>36.2 kgf·m / 5,200 rpm</h6>
+              <h5>3년 유지비</h5>
+              <h6>10,920,871원</h6>
+            </div>
+            <div class="fileplus" onclick="document.getElementById('file').click();">
+              <div>
+                <span class="material-symbols-outlined">
+                  add_circle
+                </span>
+                <p>비교할 모델을 추가해주세요</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="flex_sb" id="moha">
+      <section class="leftSection">
+        <form action="">
+          <div>
+            <h3>할부 계산기</h3>
+            <p>쏘나타 디 엣지 | 1.6 가솔린 | 스마트스트림</p>
+          </div>
+          <h5>선수금</h5>
+          <div class="range_box flex_sb">
+            <div class="range_money">
+              <input class="rangeMoney3" type="range" name="money" id="money" min="32" max="5580" value="5580" step="1">
+              <span class="span-small">32만원</span>
+              <span class="span-small">5,580만원</span>
+            </div>
+            <div class="range_read">
+              <input class="rangeRead3" type="text" value="5580" readonly>
+              만원
+            </div>
+          </div>
+          <h5>할부기간</h5>
+          <div class="range_box flex_sb">
+            <div class="range_month">
+              <input class="rangeMonth3" type="range" min="0" max="5" step="1" value="5">
+              <span class="span-small">3개월</span>
+              <span class="span-small">60개월</span>
+            </div>
+            <div class="range_seb">
+              <input class="rangeSeb3" type="text" value="60" readonly>
+              개월
+            </div>
+          </div>
+        </form>
+        <button class="calc-btn" onclick="btnPay()">계산하기</button>
+      </section>
+      <section class="rightSection">
+        <form action="">
+          <div>
+            <h3>모델 비교</h3>
+            <p>쏘나타 디 엣지 | 1.6 가솔린 | 스마트스트림</p>
+          </div>
+          <div class="flex_sb">
+            <div>
+              <h5>가격</h5>
+              <h6>54,800,000원</h6>
+              <h5>복합 연비</h5>
+              <h6>12.6 km/ℓ</h6>
+              <h5>최고 출력</h5>
+              <h6>224 ps / 3,400 rpm</h6>
+              <h5>최대 토크</h5>
+              <h6> 19.5 kgf·m / 4,200 rpm</h6>
+              <h5>3년 유지비</h5>
+              <h6>14,920,871원</h6>
+            </div>
+            <div class="fileplus" onclick="document.getElementById('file').click();">
+              <div>
+                <span class="material-symbols-outlined">
+                  add_circle
+                </span>
+                <p>비교할 모델을 추가해주세요</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+  </article>
+
+
+  <article class="brand">
+
+    <div class="main-text-center">
+      <h2>Brand</h2>
+      <p>지속가능한 미래로의 연결을 추구하는 <br>현대자동차의 브랜드 캠페인을 만나보세요.</p>
+    </div>
+
+    <div class="brand-conten">
+      <section>
+        <div>
+          <img src="images/brand1.jpg">
+        </div>
+        <div>
+          <b>여행</b>
+          <p>Open for more: 또 다른 일상의 경험을 열다, 디 올 뉴 싼타페</p>
+        </div>
+      </section>
+      <div>
+        <section>
+          <div>
+            <img src="images/brand2.jpg">
+          </div>
+          <div>
+            <b>스포츠</b>
+            <p>2023 FIFA 여자월드컵™ 동안 우리가 달려온 길</p>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img src="images/brand3.jpg">
+          </div>
+          <div>
+            <b>Kulture Stories</b>
+            <p>New meets Old</p>
+          </div>
+        </section>
+        <section>
+          <div>
+            <img src="images/brand4.jpg">
+          </div>
+          <div>
+            <b>스포츠</b>
+            <p>여자 축구의 역사와 2023 FIFA 여자월드컵™</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </article>
+
+
+  <article class="reserve">
+
+    <div class="reserves">
+      <div class="main-text-center">
+        <h2>시승 신청 및 상담 예약</h2>
+        <p>고객님의 기본정보를 입력해주시면 <br>담당 매니저가 빠르게 연락드리겠습니다.</p>
+      </div>
+      <div>
+        <div>
+          <h5><sup>*</sup>이름 </h5>
+          <input type="text" placeholder="이름을 입력해주세요">
+        </div>
+        <div>
+          <h5><sup>*</sup>성별</h5>
+          <div class="zender">
+            <label><input type="radio" name="subject" value=""> 남성</label>
+            <label><input type="radio" name="subject" value=""> 여성</label>
+          </div>
+        </div>
+        <div class="birth">
+          <h5><sup>*</sup>생년월일 </h5>
+          <div>
+            <select>
+              <option>Year</option>
+              <option>2023</option>
+              <option>2022</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+            </select>
+            <select>
+              <option>Month</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <select>
+              <option>Date</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <h5><sup>*</sup>
+            연락처</h5>
+          <input type="text" placeholder="휴대폰번호를 입력해주세요.">
+        </div>
+        <div>
+          <h5><sup>*</sup>
+            문의사항</h5>
+          <input type="text" placeholder="내용을 입력해주세요.">
+        </div>
+      </div>
+      <div>
+        <label><input type="checkbox">개인정보 수집 및 활용동의 </label>
+        <a>내용보기</a>
+      </div>
+      <button>예약하기</button>
+    </div>
+
+  </article>
+
+
+  <article class="news">
+
+    <div class="new">
+      <h2 class="main-text-center">현대자동차 소식</h2>
+      <div>
+        <div>
+          <button class=" tablink tabmenu-color tagbtn" onclick="openCity(event,'mv-one')">#현대차</button>
+          <button class="tablink tagbtn " onclick="openCity(event,'mv-two')">#CASPER</button>
+          <button class="tablink tagbtn " onclick="openCity(event,'mv-three')">#친환경</button>
+          <button class="tablink tagbtn " onclick="openCity(event,'mv-four')">#BTS</button>
+        </div>
+        <div>
+          <div id="mv-one" class="city">
+            <div class="video-ratio">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/pjDAN2uLsX4?si=lMz8B1iPc9pg0-rR&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div id="mv-two" class="city" style="display:none">
+            <div class="video-ratio">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/QoeCl4-w9-U?si=wYV9TBEWHg5NXH5K&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div id="mv-three" class="city" style="display:none">
+            <div class="video-ratio">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/sv2INkTl2JM?si=BCm2kQTiChd1yuzt&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div id="mv-four" class="city" style="display:none">
+            <div class="video-ratio">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/R035n2pW9Wg?si=baDOZ6H1BwmxakDQ&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+  <article class="map-main">
+
+    <div class="main-text-center">
+      <h2>Service network</h2>
+      <p>지점/대리점, 전시차량, 출고센터 조회 및 위치 정보 안내를 도와드립니다.</p>
+    </div>
+
+    <div>
+      <div class="map" id="inf">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2723990047402!2d127.06519327642815!3d37.501493027854316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4395894869d%3A0x5217df38fb9df287!2z7ZiE64yA7J6Q64-Z7LCoIOuMgOy5mOyngOygkA!5e0!3m2!1sko!2skr!4v1699440902989!5m2!1sko!2skr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="maps-text">
+        <div>
+          <input type="text" placeholder="지역 또는 매장명 검색">
+        </div>
+        <div>
+          <div>
+            <h6>현대자동차 을지로3가대리점</h6>
+            <p>서울특별시 중구 을지로3가 334-2<br>
+              0222662380</p>
+            <button>대리점</button>
+            <button>차량전시</button>
+          </div>
+          <div>
+            <h6>현대자동차 청계천지점</h6>
+            <p>서울특별시 중구 명동 청계천로 100<br>
+              0260202020</p>
+            <button>직영점</button>
+            <button>출고센터</button>
+          </div>
+          <div>
+            <h6>현대자동차 종로지점</h6>
+            <p>서울특별시 중구 청계천로 100 시그니쳐타워 서관 14층<br>
+              0260202020</p>
+            <button>직영점</button>
+            <button>출고센터</button>
+          </div>
+          <div>
+            <h6>현대자동차 사직대리점</h6>
+            <p>서울특별시 종로구 사직로 101<br>
+              027398855</p>
+            <button>직영점</button>
+            <button>차량전시</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+  <div w3-include-html="footer.html"></div>
+
+</body>
+
+<script>
+  includeHTML();
+</script>
+
+
+
+<script>
+  //모델 아티클 할부 계산기
+  let bestTabs = [];
+  let eTabs = [];
+  let tab_serch = [];
+  let colsecs = [];
+  let ones = [];
+  bestTabs = document.querySelectorAll('.bestTab');
+  eTabs = document.querySelectorAll('.eTab');
+  tab_serch = document.querySelectorAll('.tab1');
+  colsecs = document.querySelectorAll('.colsec');
+  ones = document.querySelectorAll('.one');
+
+  for (let i = 0; i < bestTabs.length; i++) {
+    bestTabs[i].addEventListener('click', () => tabschange(i));
+  }
+  for (let i = 0; i < eTabs.length; i++) {
+    eTabs[i].addEventListener('click', () => tabschange1(i));
+  }
+  for (let i = 0; i < tab_serch.length; i++) {
+    tab_serch[i].addEventListener('click', () => tabonoff(i));
+  }
+  for (let i = 0; i < colsecs.length; i++) {
+    colsecs[i].addEventListener('click', () => fonsiup(i))
+  }
+
+  function tabonoff(i) {
+    tab_serch[i].classList.toggle('check');
+  }
+
+  function fonsiup(i) {
+    ones[i].classList.toggle('check');
+  }
+
+
+  function tabschange(i) {
+    for (let j = 0; j < bestTabs.length; j++) {
+      bestTabs[j].classList.remove('checked');
+    }
+    document.querySelector('#second').style.display = "none";
+    document.querySelector('#three').style.display = "none";
+    document.querySelector('#four').style.display = "none";
+    document.querySelector('#five').style.display = "none";
+
+    bestTabs[i].classList.add('checked');
+    switch (i) {
+      case 0:
+        document.querySelector('#second').style.display = "block";
+        break;
+      case 1:
+        document.querySelector('#three').style.display = "block";
+        break;
+      case 2:
+        document.querySelector('#four').style.display = "block";
+        break;
+      case 3:
+        document.querySelector('#five').style.display = "block";
+        break;
+    }
+  }
+
+  let thplus = window.matchMedia("screen and (min-width:1366px");
+
+  function tabschange1(i) {
+    for (let j = 0; j < eTabs.length; j++) {
+      eTabs[j].classList.remove('checked');
+    }
+    document.querySelector('#cani').style.display = "none";
+    document.querySelector('#ssona').style.display = "none";
+    document.querySelector('#spo').style.display = "none";
+    document.querySelector('#moha').style.display = "none";
+
+    eTabs[i].classList.add('checked');
+    switch (i) {
+      case 0:
+        document.querySelector('#cani').style.display = "flex";
+        // if(thplus.matches) {
+        // 	document.querySelector('#cani').style.flexDirection = "row";
+        // }
+        // else{
+        // 	document.querySelector('#cani').style.flexDirection = "column";
+        // }
+        break;
+      case 1:
+        document.querySelector('#ssona').style.display = "flex";
+        // if(thplus.matches) {
+        // 	document.querySelector('#ssona').style.flexDirection = "row";
+        // }
+        // else{
+        // 	document.querySelector('#ssona').style.flexDirection = "column";
+        // }
+        break;
+      case 2:
+        document.querySelector('#spo').style.display = "flex";
+        // if(thplus.matches) {
+        // 	document.querySelector('#spo').style.flexDirection = "row";
+        // }
+        // else{
+        // 	document.querySelector('#spo').style.flexDirection = "column";
+        // }
+        break;
+      case 3:
+        document.querySelector('#moha').style.display = "flex";
+        // if(thplus.matches) {
+        // 	document.querySelector('#moha').style.flexDirection = "row";
+        // }
+        // else{
+        // 	document.querySelector('#moha').style.flexDirection = "column";
+        // }
+        break;
+    }
+  }
+
+
+  // 숫자 올리기 + 태그가 보여져야 작동하는 것.
+
+  let isVisible = false;
+
+  $(window).on('scroll', function () {
+    if (checkVisible($('.nums')) && !isVisible) {
+      $('.nums').each(function () {
+        const $this = $(this),
+          countTo = $this.attr('data-count');
+
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        }, {
+          duration: 15000,
+          easing: 'linear',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,
+              ','));
+            //3자리 마다 콤마 표시 적용
+          }
+        });
+      });
+      isVisible = true;
+    }
+  });
+
+
+  let isVisible2 = false;
+
+  $(window).on('scroll', function () {
+    if (checkVisible($('.nums2')) && !isVisible2) {
+      $('.nums2').each(function () {
+        const $this = $(this),
+          countTo = $this.attr('data-count');
+
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        }, {
+          duration: 15000,
+          easing: 'linear',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,
+              ','));
+            //3자리 마다 콤마 표시 적용
+          }
+        });
+      });
+      isVisible2 = true;
+    }
+  });
+
+
+  // input lange 채우기
+
+  function checkVisible(elm, eval) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+      scrolltop = $(window).scrollTop(), // Scroll Top
+      y = $(elm).offset().top,
+      elementHeight = $(elm).height();
+
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+  }
+
+  document.querySelector('.rangeMoney').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+
+  document.querySelector('.rangeMonth').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+  document.querySelector('.rangeMoney1').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+
+  document.querySelector('.rangeMonth1').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+  document.querySelector('.rangeMoney2').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+
+  document.querySelector('.rangeMonth2').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+  document.querySelector('.rangeMoney3').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+
+  document.querySelector('.rangeMonth3').addEventListener('input', function (event) {
+    var gradient_value = 100 / event.target.attributes.max.value;
+    event.target.style.background = 'linear-gradient(to right, #FFE283 0%, #FFE283 ' + gradient_value * event
+      .target.value + '%, rgb(236, 236, 236) ' + gradient_value * event.target.value +
+      '%, rgb(236, 236, 236) 100%)';
+  });
+
+
+  /*레인지 값1*/
+  let paymentRange = document.querySelector(".rangeMoney");
+  let advanceTotal = document.querySelector(".rangeRead");
+  let advanceTotalValue = Number(paymentRange.value);
+  let Cayman718Price = Number(95000000);
+  let advancePaymentValue = Cayman718Price - advanceTotalValue;
+
+  let periodRange = document.querySelector(".rangeMonth");
+  let installmentTotal = document.querySelector(".rangeSeb");
+  let rangeSteps = [3, 12, 24, 36, 48, 60];
+  let installmentTotalValue = Number(rangeSteps[periodRange.value]);
+
+  let monthlyPaymentValue = advancePaymentValue / installmentTotalValue;
+
+
+
+  paymentRange.oninput = function () {
+    advanceTotalValue = Number(this.value);
+    advanceTotal.value = advanceTotalValue.toString()
+      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    advancePaymentValue = Cayman718Price - advanceTotalValue;
+    advancePayment.innerHTML = advancePaymentValue.toLocaleString('ko-KR');
+    monthlyPaymentValue = advancePaymentValue / installmentTotalValue;
+    monthlyPaymentValue = Math.floor(monthlyPaymentValue);
+    monthlyPayment.innerHTML = monthlyPaymentValue.toLocaleString('ko-KR');
+  }
+
+  //함부 기간
+
+  periodRange.oninput = function () {
+    installmentTotalValue = Number(rangeSteps[this.value]);
+    installmentTotal.value = installmentTotalValue.toLocaleString('ko-KR');
+    monthlyPaymentValue = Math.floor(monthlyPaymentValue);
+    monthlyPaymentValue = advancePaymentValue / installmentTotalValue;
+    monthlyPayment.innerHTML = monthlyPaymentValue.toLocaleString('ko-KR');
+  }
+
+
+  /*레인지 값2*/
+  let paymentRange1 = document.querySelector(".rangeMoney1");
+  let advanceTotal1 = document.querySelector(".rangeRead1");
+  let advanceTotalValue1 = Number(paymentRange1.value);
+  let Cayman718Price1 = Number(3660);
+  let advancePaymentValue1 = Cayman718Price1 - advanceTotalValue1;
+
+  let periodRange1 = document.querySelector(".rangeMonth1");
+  let installmentTotal1 = document.querySelector(".rangeSeb1");
+  let rangeSteps1 = [3, 12, 24, 36, 48, 60];
+  let installmentTotalValue1 = Number(rangeSteps1[periodRange1.value]);
+
+  let monthlyPaymentValue1 = advancePaymentValue1 / installmentTotalValue1;
+
+  paymentRange1.oninput = function () {
+    advanceTotalValue1 = Number(this.value);
+    advanceTotal1.value = advanceTotalValue1.toString()
+      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    advancePaymentValue1 = Cayman718Price1 - advanceTotalValue1;
+    advancePayment1.innerHTML = advancePaymentValue1.toLocaleString('ko-KR');
+    monthlyPaymentValue1 = advancePaymentValue1 / installmentTotalValue1;
+    monthlyPaymentValue1 = Math.floor(monthlyPaymentValue1);
+    monthlyPayment1.innerHTML = monthlyPaymentValue1.toLocaleString('ko-KR');
+  }
+
+  //함부 기간
+
+  periodRange1.oninput = function () {
+    installmentTotalValue1 = Number(rangeSteps1[this.value]);
+    installmentTotal1.value = installmentTotalValue1.toLocaleString('ko-KR');
+    monthlyPaymentValue1 = Math.floor(monthlyPaymentValue1);
+    monthlyPaymentValue1 = advancePaymentValue1 / installmentTotalValue1;
+    monthlyPayment1.innerHTML = monthlyPaymentValue1.toLocaleString('ko-KR');
+  }
+
+
+  /*레인지 값3*/
+  let paymentRange2 = document.querySelector(".rangeMoney2");
+  let advanceTotal2 = document.querySelector(".rangeRead2");
+  let advanceTotalValue2 = Number(paymentRange2.value);
+  let Cayman718Price2 = Number(4780);
+  let advancePaymentValue2 = Cayman718Price2 - advanceTotalValue2;
+
+  let periodRange2 = document.querySelector(".rangeMonth2");
+  let installmentTotal2 = document.querySelector(".rangeSeb2");
+  let rangeSteps2 = [3, 12, 24, 36, 48, 60];
+  let installmentTotalValue2 = Number(rangeSteps2[periodRange2.value]);
+
+  let monthlyPaymentValue2 = advancePaymentValue2 / installmentTotalValue2;
+
+
+  paymentRange2.oninput = function () {
+    advanceTotalValue2 = Number(this.value);
+    advanceTotal2.value = advanceTotalValue2.toString()
+      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    advancePaymentValue2 = Cayman718Price2 - advanceTotalValue2;
+    advancePayment2.innerHTML = advancePaymentValue2.toLocaleString('ko-KR');
+    monthlyPaymentValue2 = advancePaymentValue2 / installmentTotalValue2;
+    monthlyPaymentValue2 = Math.floor(monthlyPaymentValue2);
+    monthlyPayment2.innerHTML = monthlyPaymentValue2.toLocaleString('ko-KR');
+  }
+
+  //함부 기간
+
+  periodRange2.oninput = function () {
+    installmentTotalValue2 = Number(rangeSteps2[this.value]);
+    installmentTotal2.value = installmentTotalValue2.toLocaleString('ko-KR');
+    monthlyPaymentValue2 = Math.floor(monthlyPaymentValue2);
+    monthlyPaymentValue2 = advancePaymentValue2 / installmentTotalValue2;
+    monthlyPayment2.innerHTML = monthlyPaymentValue2.toLocaleString('ko-KR');
+  }
+
+
+  /*레인지 4*/
+  let paymentRange3 = document.querySelector(".rangeMoney3");
+  let advanceTotal3 = document.querySelector(".rangeRead3");
+  let advanceTotalValue3 = Number(paymentRange3.value);
+  let Cayman718Price3 = Number(5580);
+  let advancePaymentValue3 = Cayman718Price3 - advanceTotalValue3;
+
+  let periodRange3 = document.querySelector(".rangeMonth3");
+  let installmentTotal3 = document.querySelector(".rangeSeb3");
+  let rangeSteps3 = [3, 12, 24, 36, 48, 60];
+  let installmentTotalValue3 = Number(rangeSteps3[periodRange3.value]);
+
+  let monthlyPaymentValue3 = advancePaymentValue3 / installmentTotalValue3;
+
+
+  paymentRange3.oninput = function () {
+    advanceTotalValue3 = Number(this.value);
+    advanceTotal3.value = advanceTotalValue3.toString()
+      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    advancePaymentValue3 = Cayman718Price3 - advanceTotalValue3;
+    advancePayment3.innerHTML = advancePaymentValue3.toLocaleString('ko-KR');
+    monthlyPaymentValue3 = advancePaymentValue3 / installmentTotalValue3;
+    monthlyPaymentValue3 = Math.floor(monthlyPaymentValue3);
+    monthlyPayment3.innerHTML = monthlyPaymentValue3.toLocaleString('ko-KR');
+  }
+
+  //함부 기간
+
+  periodRange3.oninput = function () {
+    installmentTotalValue3 = Number(rangeSteps3[this.value]);
+    installmentTotal3.value = installmentTotalValue3.toLocaleString('ko-KR');
+    monthlyPaymentValue3 = Math.floor(monthlyPaymentValue3);
+    monthlyPaymentValue3 = advancePaymentValue3 / installmentTotalValue3;
+    monthlyPayment3.innerHTML = monthlyPaymentValue3.toLocaleString('ko-KR');
+  }
+</script>
+
+</html>

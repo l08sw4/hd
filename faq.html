@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="board.css">
+    <link rel="stylesheet" href="header-foot-style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!--구글폰트 아이콘-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--sns아이콘-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!---aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div w3-include-html="header.html"></div>
+
+
+    <article class="faq">
+
+        <div class="mains">
+            <h2>FAQ</h2>
+        </div>
+
+        <div class="contents">
+            <h4 class="pad36">자주하는 질문</h4>
+            <div class="searchs">
+                <input type="text" placeholder="궁금한 점을 검색해보세요.">
+            </div>
+            <div class="oft-qu">
+                <h5>자주하는 질문 best5</h5>
+                <div>
+                    <section class="bord-top">
+                        <div class="collapsible" onclick="collapse(this);">
+                            <p><span class="bolds">Q.</span>[차량구매]
+                                차량계약 후 해지 시 계약금은 환불 받을수 있습니까?</p>
+                        </div>
+                        <div class="content">
+                            <p>차량 출고전 해지요청시에는 계약금 환불이 가능하며,
+                                자세한 사항은 계약하신 지점(대리점)에 문의 바랍니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="collapsible" onclick="collapse(this);">
+                            <p><span class="bolds">Q.</span>[차량구매] 장애인차량 구입조건에 대해 알고 싶습니다.</p>
+                        </div>
+                        <div class="content">
+                            <p>장애인 조건의 차량구입은 장애인 단독명의, 장애인과 주민등록표상 세대를 함께하는 배우자,
+                                직계존비속,형제자매 또는 직계비속의 배우자 공동명의로 구입이 가능합니다.
+
+                                단, 몇가지 조건이 붙는데 장애인 공동명의 조건으로 구입하신 차량은 차량출고후 5년간
+                                동일조건(주민등록법상 동일세대)를 유지해야 하고 이 조건이 충족되지 않을때 면세받은 금액을
+                                납부하셔야 합니다.
+                                또한 재구입연한이 만 5년으로 되어있어 기간내에 동일차량을 계속 보유하셔야 되며, 이또한
+                                조건 불충족시 면세받으신 세금을 납부하시게 됩니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="collapsible" onclick="collapse(this);">
+                            <p><span class="bolds">Q.</span>[차량구매] 차량구입시 신용카드는 얼마까지 이용할 수 있나요?</p>
+                        </div>
+                        <div class="content">
+                            <p>자동차 구입시 신용카드를 이용한 결제는 고객님 신용카드 한도내에서 희망하시는 금액까지 자유로이 결제가 가능합니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="collapsible" onclick="collapse(this);">
+                            <p><span class="bolds">Q.</span>[차량구매] 차량계약 후 예상납기일에 대해 알 수 있나요?</p>
+                        </div>
+                        <div class="content">
+                            <p>계약하신 지점(대리점)에서 확인 가능합니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="collapsible" onclick="collapse(this);">
+                            <p><span class="bolds">Q.</span>[차량구매] 세이브오토 이용에 관해 알고 싶습니다.</p>
+                        </div>
+                        <div class="content">
+                            <p> 현대자동차 신차 구입시 현대카드M을 이용하여 선수금을 10만원 이상 결제하시는 경우
+                                차량구매 대금중 일부를 해당포인트(20만/30만/50만)만큼 先할인해 드립니다.
+
+                                先할인 받으신 금액은 이후 36개월 동안 고객님의 현대카드M 사용실적에 따라 적립되는
+                                포인트로 상환하시게 되며,미상환 하신 경우 익월 카드대금 청구시 전액 청구됩니다.
+
+                                세이브오토 프로그램은 적용을 원하시는 고객께서 신청하시는 경우에만 적용되고
+                                이용기간 중 미상환하신 포인트에 대한 대금청구시 이자는 부과되지 않습니다.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div>
+                <div class="qu-btn">
+                    <button class=" tablink tabmenu-color tagbtn" onclick="openCity(event,'mv-one')">차량구매</button>
+                    <button class="tablink tagbtn " onclick="openCity(event,'mv-two')">차량정비</button>
+                    <button class="tablink tagbtn " onclick="openCity(event,'mv-three')">홈페이지</button>
+                </div>
+                <div>
+                    <div id="mv-one" class="city">
+                        <section class="bord-top">
+                            <div class="collapsible" onclick="collapse(this);">
+                                <p><span class="bolds">Q.</span>상용차량을 볼 수 있는 전시장이 있나요?</p>
+                            </div>
+                            <div class="content">
+                                <p>고객들에게 다양한 서비스를 제공하기 위한 상용차 복합 거점 브랜드 ‘엑시언트 스페이스’가 제천, 아산, 전주, 부산, 울산에 있습니다.<br>
+                                    상세한 내용은 구매/이벤트 > 전시/시승 > 엑시언트 스페이스에서 참고하여 주세요</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="collapsible" onclick="collapse(this);">
+                                <p><span class="bolds">Q.</span>보유중인 자동차를 팔고 싶은데, 어떻게 하면 좋을까요?</p>
+                            </div>
+                            <div class="content">
+                                <p>매입 서비스에 대한 자세한 내용이 궁금하시거나,
+                                    판매 상담을 받으시려면 [Home > 차량관리서비스 > 매도&구매지원 > 중고차 > 내차팔기] 메뉴에서
+                                    '내차 팔기 상담신청' 을 통해 상담신청을 하시면 친절하고 상세하게 안내해 드리겠습니다.</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="collapsible" onclick="collapse(this);">
+                                <p><span class="bolds">Q.</span>포인트는 어떻게 활용하나요?</p>
+                            </div>
+                            <div class="content">
+                                <p>포인트는 블루멤버스 사이트 내에서 현금 처럼 사용 하실 수 있으며, 고객님께서 블루핸즈 서비스를 받으실 때도 현금처럼 지불 하실 수 있습니다</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="mv-two" class="city" style="display:none">
+                        <div class="video-ratio">
+                            <section>
+                                <div class="collapsible" onclick="collapse(this);">
+                                    <p><span class="bolds">Q.</span>(상용) 수동재생 진행 중, 시동을 꺼도 되나요?</p>
+                                </div>
+                                <div class="content">
+                                    <p>재생 중에는 끄지 말아 주시고, 수동재생 탈출 후엔 바로 시동을 꺼도 됩니다.
+                                        배기정화장치 DPF 내부 이상 고온 현상으로 DPF 및 엔진이 손상될 수 있습니다</p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="collapsible" onclick="collapse(this);">
+                                    <p><span class="bolds">Q.</span>(상용) 주행 중 갑자기 엔진 출력이 떨어지면서 노킹 현상이 나타납니다. 왜 그런가요?</p>
+                                </div>
+                                <div class="content">
+                                    <p>엔진 출력이 급격히 떨어지고 노킹 현상 Knocking, 엔진의 연료실 벽을 작은 망치로 두드리는 듯한 소리가 나는 현상이 지속적으로 발생하면
+                                        엔진의 오버히트를 의심해 봐야 합니다.
+                                        오버히트는 냉각수가 부족하거나 샐 경우, 워터펌프 구동벨트가 끊어진 경우, 냉각팬이 돌지 않을 경우 등 여러 가지 원인으로 인해 엔진이 과열돼
+                                        증기가 끓어오르는 현상입니다.
+                                        이때는 계기판에 있는 냉각수 온도 게이지가 적색 눈금 H을 가리키게 됩니다.
+                                        겨울철에는 냉각수에 부동액이 들어있지 않거나 엔진 내부가 동결되어 냉각수가 순환하지 못할 때에도 동일한 현상이 발생합니다.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="mv-three" class="city" style="display:none">
+                        <section>
+                            <div class="collapsible" onclick="collapse(this);">
+                                <p><span class="bolds">Q.</span>실 운행자 등록 방법은 어떻게 되나요?</p>
+                            </div>
+                            <div class="content">
+                                <p>내 차로 등록한 차량에 한하여 실 운행자 지정이 가능합니다.
+                                    승상용 통합 회원으로 가입한 고객의 통합 이메일 ID 및 이름으로 검색 후 지정이 가능합니다.</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="collapsible" onclick="collapse(this);">
+                                <p><span class="bolds">Q.</span>차량을 판매한 경우 어떻게 하나요?</p>
+                            </div>
+                            <div class="content">
+                                <p>마이페이지에서 보유차량 삭제를 눌러주시면 더 이상 차량 정보 표출이 되지 않습니다.</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="collapsible" onclick="collapse(this);">
+                                <p><span class="bolds">Q.</span>내 차가 아닌 다른 차량이 보입니다.</p>
+                            </div>
+                            <div class="content">
+                                <p>차량을 다른 운전자에게 판매하신 뒤에도 내 차 정보에서 지속하여 정보가 표출될 경우, 직접 내 차 정보에서 차량 삭제 기능을 통하여 삭제할 수 있습니다.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="collapsible" onclick="collapse(this);">
+                                <p><span class="bolds">Q.</span>실 운행자 등록 시 사용 가능한 기능은 무엇인가요?</p>
+                            </div>
+                            <div class="content">
+                                <p>실 운행자로 등록되신 경우에 정비예약, 수리 이력 확인 등 차량운행 시 필요한 기능 활용이 가능합니다.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+    <div w3-include-html="footer.html"></div>
+
+
+</body>
+
+
+<script>
+    includeHTML();
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

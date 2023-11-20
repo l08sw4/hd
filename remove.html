@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="header-foot-style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<!--구글폰트 아이콘-->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!--sns아이콘-->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<!---aos-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<div w3-include-html="header.html"></div>
+
+
+	<article class="removes">
+
+		<div class="mains">
+			<h2>회원탈퇴</h2>
+		</div>
+
+		<div class="contents remove-one">
+			<h4>회원탈퇴</h4>
+			<div class="icons"><span class="xi-user-o "> </span></div>
+			<h5>정말로 탈퇴하시겠습니까?</h5>
+			<br>
+			<p>탈퇴 시 이용내역이 삭제되며
+				서비스 이용이 제한됩니다.<br>
+				또한 삭제된 계정은 복구되지 않습니다.</p>
+			<button>탈퇴하기</button>
+		</div>
+
+		<div class="contents remove-reason">
+			<div class="mains">
+				<h5>설문조사</h5>
+				<p>불편했던 점, 개선할 점을 공유해주시면 <br>더 나은 서비스를 위해 반영하도록 하겠습니다.</p>
+			</div>
+			<div class="reason">
+				<h5>탈퇴사유</h5>
+				<select>
+					<option>선택해주세요.</option>
+					<option>기록을 삭제하기 위하여</option>
+					<option>이용에 불편함과 장애가 많아서</option>
+					<option>다른 사이트가 더 좋아서</option>
+					<option>콘텐츠에 불만족</option>
+					<option>원하는 기능이 없어서</option>
+					<option>더 이상 필요가 없어져서</option>
+					<option>사이트의 방향성이 가치관과 맞지 않아서</option>
+					<option>기타</option>
+				</select>
+			</div>
+			<div>
+				<h5>건의사항</h5>
+				<textarea placeholder="소중한 의견 귀담아 듣겠습니다."></textarea>
+			</div>
+			<button>제출하기</button>
+		</div>
+
+	</article>
+
+
+	<article>
+		<div class="contents remove-ok">
+			<h5>탈퇴완료</h5>
+			<div class="icons"> <span class="xi-minus-circle-o"></span></div>
+			<p>정상적으로 탈퇴 처리 되었습니다.</p>
+			<h5>그 동안 이용해주셔서 감사합니다.</h5>
+		</div>
+	</article>
+
+	<div w3-include-html="footer.html"></div>
+
+
+</body>
+
+
+<script>
+	includeHTML();
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

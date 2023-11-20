@@ -1,0 +1,565 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid gray;
+}
+
+body {
+    font-family: Pretendard, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    word-break: keep-all;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+small {
+    color: #bbb;
+    font-size: 0.8rem;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin-top: 16px;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.span-small {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+button {
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0);
+    font-family: Pretendard, sans-serif;
+    font-weight: 400;
+    border: 1px solid #ddd;
+    padding: 4px 0;
+    width: 80px;
+}
+
+
+button:hover {
+    background: #eee;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+select {
+    width: 100%;
+    background: white;
+    font-family: Pretendard, sans-serif;
+}
+
+select:focus {
+    outline: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    font-family: Pretendard, sans-serif;
+    padding: 12px 0;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+::placeholder {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.margins {
+    margin: 0 5%;
+}
+
+.main-text {
+    text-align: center;
+}
+
+
+.main-text p {
+    margin-bottom: 64px;
+}
+
+.cl-white {
+    color: white;
+}
+
+.cl-white:hover {
+    color: black;
+}
+
+/*start*/
+
+.products> :nth-child(1)> :nth-child(1) {
+    height: 600px;
+    margin: 0;
+    background: url("images/product-main.jpg")no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.products> :nth-child(1)> :nth-child(2) {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: white;
+}
+
+.products> :nth-child(1) div * {
+    margin: 5px 0;
+}
+
+.products> :nth-child(2) {
+    background: #1c1b1b;
+}
+
+.products> :nth-child(2) ul {
+    color: white;
+    padding: 24px 0;
+    display: flex;
+    justify-content: left;
+}
+
+.products> :nth-child(2) ul li {
+    margin-right: 24px;
+}
+
+/**/
+/*상담예약*/
+.reserve {
+    padding: 88px 5%;
+}
+
+.reserve .main-text-center {
+    padding-bottom: 32px;
+}
+
+.reserves {
+    margin: 0 auto;
+}
+
+.reserves>div {
+    margin-bottom: 16px;
+}
+
+.reserves>:nth-child(2)>div input[type="text"] {
+    background: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding-left: 8px;
+}
+
+.reserves>:nth-child(3) {
+    padding-bottom: 16px;
+}
+
+.reserves> :nth-child(2)>div {
+    padding-bottom: 16px;
+}
+
+.reserves> :nth-child(2)>div h5 {
+    padding-bottom: 6px;
+}
+
+.birth>div {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.birth>div> :nth-child(2) {
+    margin: 0 16px;
+}
+
+.reserves h5 {
+    padding: 4px 0;
+}
+
+.reserves button {
+    width: 100%;
+}
+
+.zender {
+    margin-right: 110px;
+    margin-top: 10px;
+}
+
+.reserves a {
+    color: #808080;
+}
+
+.reserves a:hover {
+    border-bottom: 1px solid;
+}
+
+.reserves button {
+    padding: 12px 0;
+}
+
+/**/
+.moreinfo section {
+    height: 600px;
+    position: relative;
+}
+
+.moreinfo section> :nth-child(1) {
+    position: relative;
+}
+
+.moreinfo section> :nth-child(1) img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.hovers {
+    position: absolute;
+    top: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 99;
+    transition: 0.5s;
+}
+
+.hovers button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.moreinfo section> :nth-child(2) {
+    position: absolute;
+    color: white;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.moreinfo section> :nth-child(2)>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 240px;
+}
+
+.moreinfo section> :nth-child(2)>div button {
+    display: none;
+}
+
+.moreinfo section:hover .hovers {
+    opacity: 1;
+}
+
+/**/
+.fun-pc {
+    display: none;
+}
+
+.functions {
+    background: #f7f6f2;
+    padding: 88px 0;
+}
+
+.functions> :nth-child(2) section {
+    border-bottom: 1px solid #ddd;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-weight: normal;
+    color: #444;
+}
+
+.active,
+.collapsible:hover {
+    color: black;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #777;
+    font-weight: normal;
+    float: right;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content img {
+    max-height: 300px;
+}
+
+.content p {
+    margin: 12px 0 24px;
+}
+
+
+
+
+/*피씨*/
+@media screen and (min-width:1366px) {
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    br.break-m {
+        display: none;
+    }
+
+    .products> :nth-child(1)> :nth-child(1) {
+        height: 700px;
+    }
+
+    .products> :nth-child(1)> :nth-child(2) {
+        width: 1000px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .products> :nth-child(1) div * {
+        margin: 8px 0;
+    }
+
+    .products> :nth-child(1)> :nth-child(2) h1 {
+        font-size: 3rem;
+    }
+
+    .products> :nth-child(1)> :nth-child(2) p {
+        font-size: 1.3rem;
+    }
+
+    .products> :nth-child(1)> :nth-child(2) h5 {
+        font-size: 1.5rem;
+    }
+
+    .products> :nth-child(1)> :nth-child(2) button {
+        font-size: 1.3rem;
+        width: 120px;
+    }
+
+    .products> :nth-child(2)>ul {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .reserve {
+        border-top: 1px solid #eee;
+    }
+
+    .reserves {
+        width: 1000px;
+        padding: 88px 0;
+    }
+
+    /**/
+
+    .moreinfo {
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .moreinfo section {
+        height: 800px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 264px 0;
+    }
+
+    .moreinfo section> :nth-child(1) {
+        position: relative;
+        width: 80%;
+    }
+
+    .moreinfo section> :nth-child(1) img {
+        height: 800px;
+        object-fit: cover;
+    }
+
+    .moreinfo section> :nth-child(2) {
+        position: inherit;
+        width: 20%;
+        margin: 0 5%;
+        height: 800px;
+        color: black;
+        position: relative;
+    }
+
+    .moreinfo section> :nth-child(2)>div {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+    }
+
+    .info-two> :nth-child(1) {
+        order: 2;
+    }
+
+    .moreinfo section> :nth-child(2)>div * {
+        margin: 8px 0;
+    }
+
+    .moreinfo section> :nth-child(2)>div button {
+        width: 120px;
+        display: inline-block;
+        color: #666;
+        border: 1px solid #ddd;
+        font-size: 1.1rem;
+    }
+
+    .moreinfo section> :nth-child(2)>div button:hover {
+        color: black;
+    }
+
+    .hovers button {
+        display: none;
+    }
+
+    /**/
+    .fun-mb {
+        display: none;
+    }
+
+    .fun-pc {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fun-pc section {
+        position: relative;
+        width: 320px;
+
+        height: 460px;
+    }
+
+    .fun-pc section img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .fun-pc section button {
+        width: 100%;
+        padding: 16px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .fun-pc section h5 {
+        margin: 16px 0 8px 0;
+    }
+
+    .functions {
+        padding: 176px 0;
+    }
+
+}

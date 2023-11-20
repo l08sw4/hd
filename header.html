@@ -1,0 +1,86 @@
+<header>
+
+	<div class="logo">
+		<a href="/index.html"><img src="images/logo.png"></a>
+	</div>
+
+	<nav id="pc-nav">
+		<ul>
+			<li><a href="/purchase.html">purchase</a></li>
+			<li><a href="/login.html">login</a></li>
+			<li><a href="/joinus.html">joinus</a></li>
+			<li><a href="/remove.html">remove</a></li>
+			<li><a href="/faq.html">faq</a></li>
+			<li><a href="/qna.html">qna</a></li>
+			<li><a href="/news.html">news</a></li>
+		</ul>
+	</nav>
+
+	<!--아이콘-->
+	<div class="right-nav">
+		<!--검색-->
+		<span class="material-symbols-outlined" onclick="javascript:btnPay()">search</span>
+		<!--pc버전아이콘-->
+		<span class="material-symbols-outlined" id="langs" onclick="btnPay()"> language</span>
+		<!--모바일 내비-->
+		<div class="top-menu" id="opens">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div id="mobNav">
+			<a href="#" id="closes">✕</a>
+			<div>
+				<div class="mobLogin">
+					<h5>로그인 해주세요.</h5>
+					<button><a>로그인</a></button>
+					<button><a>회원가입</a></button>
+				</div>
+				<div>
+					<div class="roll-search">
+						<h6>인기 검색어</h6>
+						<div class="roll-top">
+							<ul class="rolling">
+								<li>1. 아반떼</li>
+								<li>2. 중고거래</li>
+								<li>3. 사용조회</li>
+								<li>4. 서비스 센터</li>
+								<li>5. 아이오닉</li>
+							</ul>
+						</div>
+					</div>
+					<input type="text" placeholder="Search">
+					<ul class="mobNavs">
+						<li><a href="/index.html">home</a></li>
+						<li><a href="/purchase.html">purchase</a></li>
+						<li><a href="/login.html">login</a></li>
+						<li><a href="/joinus.html">joinus</a></li>
+						<li><a href="/remove.html">remove</a></li>
+						<li><a href="/faq.html">faq</a></li>
+						<li><a href="/qna.html">qna</a></li>
+						<li><a href="/news.html">news</a></li>
+					</ul>
+					<ul class="mobLogo">
+						<li><a class="xi-youtube-play"></a></li>
+						<li><a class="xi-instagram"></a></li>
+						<li><a class="xi-facebook"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			let modal1 =
+				document.querySelector("#_searchs");
+
+			function showcon1() {
+				modal1.style.top = "0px";
+			}
+
+			function hidecon1() {
+				modal1.style.top = "-600px";
+			}
+		</script>
+
+		<script type="text/javascript" src="script.js"></script>
