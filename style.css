@@ -1398,7 +1398,7 @@ footer> :nth-child(2) {
   }
 
   .brand-conten> :nth-child(1)>:nth-child(1) {
-    height: 588px;
+    height: 612px;
     margin-bottom: 8px;
   }
 
@@ -1424,10 +1424,6 @@ footer> :nth-child(2) {
     padding-left: 16px;
   }
 
-  .brand-conten> :nth-child(2)> :nth-child(2) {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
 
   .reserves {
     width: 600px;
