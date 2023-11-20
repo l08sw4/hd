@@ -228,13 +228,8 @@ img {
 
 /*start*/
 
-.files {
-    margin: 16px 0 20px;
-}
-
-.files label {
-    border: 1px solid #ddd;
-    padding: 12px;
+.qna-file label {
+    padding-top: 2px;
 }
 
 .view-event> :nth-child(2) {
@@ -455,7 +450,7 @@ img {
         font-size: 2rem;
     }
 
-    p,
+    .qna-file label,p,
     a,
     b {
         font-size: 1rem;
