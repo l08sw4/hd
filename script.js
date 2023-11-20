@@ -29,28 +29,9 @@ function includeHTML() {
           if (this.status == 404) {
             elmnt.innerHTML = "Page not found.";
           }
-          /*remove the attribute, and call this function once more:*/
-
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
 
           // -------------------------------------------------------------------------
-
-          //검색창 팝업
-
-          let modal1 =
-            document.querySelector("#_searchs");
-
-          function showcon1() {
-            modal1.style.top = "0px";
-          }
-
-          function hidecon1() {
-            modal1.style.top = "-600px";
-          }
-
-
-
+          //내비
           let openss = document.querySelector("#opens");
           openss.addEventListener("click", function () {
             document.querySelector("#opens").style.opacity = "0";
@@ -63,14 +44,13 @@ function includeHTML() {
             document.querySelector("#opens").style.opacity = "1";
           });
 
-
           //롤링
           $(document).ready(function () {
             var height = $(".roll-top").height();
             var num = $(".rolling li").length;
             var max = height * num;
             var move = 0;
-
+    
             function noticeRolling() {
               move += height;
               $(".rolling").animate({
@@ -84,7 +64,7 @@ function includeHTML() {
             };
             noticeRollingOff = setInterval(noticeRolling, 1000);
             $(".rolling").append($(".rolling li").first().clone());
-
+    
             $(".rolling_stop").click(function () {
               clearInterval(noticeRollingOff);
             });
@@ -92,10 +72,8 @@ function includeHTML() {
               noticeRollingOff = setInterval(noticeRolling, 1500);
             });
           });
+  
 
-          // -------------------------------------------------------------------------
-
-          // ---------------------------------
         }
       }
       xhttp.open("GET", file, true);

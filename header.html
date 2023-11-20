@@ -1,3 +1,9 @@
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+
 <header>
 
 	<div class="logo">
@@ -71,16 +77,33 @@
 		</div>
 
 		<script>
-			let modal1 =
-				document.querySelector("#_searchs");
+			$(document).ready(function () {
+				var height = $(".roll-top").height();
+				var num = $(".rolling li").length;
+				var max = height * num;
+				var move = 0;
 
-			function showcon1() {
-				modal1.style.top = "0px";
-			}
+				function noticeRolling() {
+					move += height;
+					$(".rolling").animate({
+						"top": -move
+					}, 600, function () {
+						if (move >= max) {
+							$(this).css("top", 0);
+							move = 0;
+						};
+					});
+				};
+				noticeRollingOff = setInterval(noticeRolling, 1000);
+				$(".rolling").append($(".rolling li").first().clone());
 
-			function hidecon1() {
-				modal1.style.top = "-600px";
-			}
+				$(".rolling_stop").click(function () {
+					clearInterval(noticeRollingOff);
+				});
+				$(".rolling_start").click(function () {
+					noticeRollingOff = setInterval(noticeRolling, 1500);
+				});
+			});
 		</script>
 
 		<script type="text/javascript" src="script.js"></script>
