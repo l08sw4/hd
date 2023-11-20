@@ -60,50 +60,6 @@ function includeHTML() {
       return;
     }
   }
-  
-  {
-    
-//내비
-    let openss = document.querySelector("#opens");
-    openss.addEventListener("click", function () {
-      document.querySelector("#opens").style.opacity = "0";
-      document.querySelector("#mobNav").style.width = "100%";
-    });
-
-    let closess = document.querySelector("#closes");
-    closess.addEventListener("click", function () {
-      document.querySelector("#mobNav").style.width = "0%";
-      document.querySelector("#opens").style.opacity = "1";
-    });
-
-    //롤링
-    $(document).ready(function () {
-      var height = $(".roll-top").height();
-      var num = $(".rolling li").length;
-      var max = height * num;
-      var move = 0;
-
-      function noticeRolling() {
-        move += height;
-        $(".rolling").animate({
-          "top": -move
-        }, 600, function () {
-          if (move >= max) {
-            $(this).css("top", 0);
-            move = 0;
-          };
-        });
-      };
-      noticeRollingOff = setInterval(noticeRolling, 1000);
-      $(".rolling").append($(".rolling li").first().clone());
-
-      $(".rolling_stop").click(function () {
-        clearInterval(noticeRollingOff);
-      });
-      $(".rolling_start").click(function () {
-        noticeRollingOff = setInterval(noticeRolling, 1500);
-      });
-    });}
 };
 
 //탭하면 컨텐츠가 바뀜
