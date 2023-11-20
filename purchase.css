@@ -202,7 +202,7 @@ input[type="file"] {
 /**/
 /*상담예약*/
 .reserve {
-    padding: 88px 5%;
+    padding: 88px 5% 176px;
 }
 
 .reserve .main-text-center {
