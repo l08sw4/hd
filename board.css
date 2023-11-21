@@ -144,8 +144,15 @@ article {
 
 /* form default */
 
-
 input[type="text"] {
+    font-family: Pretendard, sans-serif;
+    padding: 12px 0;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #ddd;
+    background-size: 16px;
+  }
+
+.searchs input[type="text"] {
     font-family: Pretendard, sans-serif;
     padding: 12px 0;
     background: rgba(0, 0, 0, 0);
