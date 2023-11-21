@@ -456,6 +456,11 @@ img {
         padding-left: 2.5%;
     }
 
+    select:optional {
+        background: url("images/icon-down-arrow.png")no-repeat 95% center;
+        background-size: 10px;
+    }
+
     textarea {
         padding-left: 2.5%;
     }
