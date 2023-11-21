@@ -165,6 +165,7 @@ textarea {
 
 textarea:focus {
     outline: none;
+    border: 1px solid black;
 }
 
 input[type="text"],

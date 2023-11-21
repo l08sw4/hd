@@ -146,18 +146,9 @@ article {
 
 input[type="text"] {
     font-family: Pretendard, sans-serif;
-    padding: 12px 0;
+    padding: 12px 5%;
     background: rgba(0, 0, 0, 0);
     border: 1px solid #ddd;
-    background-size: 16px;
-}
-
-.searchs input[type="text"] {
-    font-family: Pretendard, sans-serif;
-    padding: 12px 0;
-    background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid black;
-    background: url("images/search-icon.png")no-repeat right 80%;
     background-size: 16px;
 }
 
@@ -166,6 +157,26 @@ input[type="text"]:focus {
     outline: none;
 }
 
+.searchs input[type="text"],
+.story-search input[type="text"] {
+    font-family: Pretendard, sans-serif;
+    padding: 12px 0;
+    background: rgba(0, 0, 0, 0);
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    background: url("images/icon-search.png")no-repeat right 50%;
+    background-size: 16px;
+}
+
+.searchs input[type="text"]:focus,
+.story-search input[type="text"]:focus {
+    outline: none;
+}
+.searchs input[type="text"]{
+    margin-bottom: 48px;
+}
 textarea {
     width: 100%;
     border: 1px solid #ddd;
@@ -177,6 +188,7 @@ textarea {
 
 textarea:focus {
     outline: none;
+    border: 1px solid black;
 }
 
 input[type="text"],
@@ -266,6 +278,7 @@ img {
     line-height: 3.2rem;
     margin: 0 4px;
 }
+
 
 .qna-file {
     border-bottom: 1px solid #ddd;
@@ -420,17 +433,6 @@ img {
     background: #eee;
 }
 
-.searchs input[type="text"] {
-    font-family: Pretendard, sans-serif;
-    background: rgba(0, 0, 0, 0);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid black;
-    background: url("images/icon-search.png")no-repeat right 50%;
-    background-size: 16px;
-    margin-bottom: 48px;
-}
 
 .bolds {
     font-weight: bold;
