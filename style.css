@@ -512,13 +512,13 @@ header {
 .mobLogo li:hover {
   color: black;
   background: white;
+  border: 1px solid black;
 }
 
 .mobLogo li {
-  background: #eee;
-  color: #666;
+  border: 1px solid #ddd;
+  color:#333;
   border-radius: 100%;
-  border: 1px solid;
   padding: 5px;
   transition: 0.6s;
 }

@@ -462,13 +462,13 @@ header {
 .mobLogo li:hover {
   color: black;
   background: white;
+  border: 1px solid black;
 }
 
 .mobLogo li {
-  background: #eee;
-  color: #666;
+  border: 1px solid #ddd;
+  color:#333;
   border-radius: 100%;
-  border: 1px solid;
   padding: 5px;
   transition: 0.6s;
 }
@@ -562,7 +562,6 @@ footer> :nth-child(2) {
     line-height: 3rem;
   }
 
-
   #pc-nav {
     display: block;
     position: absolute;
@@ -579,11 +578,10 @@ footer> :nth-child(2) {
   #pc-nav ul li {
     text-transform: uppercase;
     margin: 0 16px;
-    color: black;
   }
 
-  #pc-nav ul a {
-    color: black;
+  #pc-nav a {
+    color: #222;
   }
 
   #pc-nav ul li::after {
