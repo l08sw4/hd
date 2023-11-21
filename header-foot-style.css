@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
 }
 
+
 img {
   width: 100%;
 }
@@ -58,6 +59,7 @@ h6 {
 p {
   line-height: 1.2rem;
 }
+
 
 a {
   text-decoration: none;
@@ -256,6 +258,53 @@ header {
   line-height: 1.7rem;
 }
 
+/*검색창 팝업*/
+#searchs {
+  cursor: pointer;
+}
+
+.searchs {
+  background-size: cover;
+  transition: 0.5s;
+  position: absolute;
+  top: -600px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 110;
+  width: 90%;
+  text-align: left;
+  border-radius: 0 0 8px 8px;
+  padding: 32px 5%;
+  background: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchs>div>div {
+  max-width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchs p {
+  margin: 16px 0 8px 0;
+}
+
+.searchs button {
+  width: 64px;
+}
+
+.hide {
+  color: black;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  font-size: 1.2rem;
+  padding: 4px 16px;
+}
+
+#search-input {
+  width: 100%;
+}
 
 #langs,
 .langs {
@@ -317,11 +366,6 @@ header {
   position: fixed;
   transition: .3s;
   background: white;
-}
-
-.login-small,
-.join-small {
-  color: #666;
 }
 
 /*x닫기*/
@@ -416,8 +460,7 @@ header {
   content: "❯";
   width: 20px;
   height: 20px;
-  opacity: 0;
-  margin-left: 8px;
+  float: right;
 }
 
 .mobNavs a {
@@ -426,10 +469,6 @@ header {
 
 .mobNavs li:hover {
   animation: tracking-in-expand-fwd .6s cubic-bezier(.215, .61, .355, 1.000) both
-}
-
-.mobNavs li:hover::after {
-  opacity: 1;
 }
 
 @keyframes tracking-in-expand-fwd {
@@ -450,7 +489,7 @@ header {
 }
 
 .mobLogo {
-  color: #999;
+  color: #555;
   width: 110px;
   display: flex;
   justify-content: space-between;
@@ -458,19 +497,14 @@ header {
   margin-bottom: 36px;
 }
 
-
 .mobLogo li:hover {
   color: black;
-  background: white;
-  border: 1px solid black;
 }
 
 .mobLogo li {
-  border: 1px solid #ddd;
-  color:#333;
   border-radius: 100%;
+  border: 1px solid;
   padding: 5px;
-  transition: 0.6s;
 }
 
 
@@ -562,6 +596,17 @@ footer> :nth-child(2) {
     line-height: 3rem;
   }
 
+  p,
+  b {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  main a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   #pc-nav {
     display: block;
     position: absolute;
@@ -599,6 +644,9 @@ footer> :nth-child(2) {
   }
 
   /*모바일내비*/
+  .searchs {
+    width: 1200px;
+  }
 
   .top-menu {
     display: none;

@@ -146,19 +146,10 @@ article {
 
 input[type="text"] {
     font-family: Pretendard, sans-serif;
-    padding: 12px 0;
-    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    line-height: 2.5rem;
+    padding-left: 5%;
     border: 1px solid #ddd;
-    background-size: 16px;
-}
-
-.searchs input[type="text"] {
-    font-family: Pretendard, sans-serif;
-    padding: 12px 0;
-    background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid black;
-    background: url("images/search-icon.png")no-repeat right 80%;
-    background-size: 16px;
 }
 
 input[type="text"]:focus {
@@ -206,12 +197,7 @@ select {
     border: 1px solid #ddd;
     width: 100%;
     font-family: Pretendard, sans-serif;
-    appearance: none;
-}
-
-select:optional {
-    background: url("images/icon-down-arrow.png")no-repeat 90% center;
-    background-size: 10px;
+    background: white;
 }
 
 .flexs {
@@ -402,6 +388,8 @@ img {
     color: black;
 }
 
+
+
 .oft-qu h5 {
     margin-bottom: 16px;
 }
@@ -427,7 +415,7 @@ img {
     border-left: 0;
     border-right: 0;
     border-bottom: 1px solid black;
-    background: url("images/icon-search.png")no-repeat right 50%;
+    background: url("https://svgsilh.com/png-1024/1093183.png")no-repeat right 50%;
     background-size: 16px;
     margin-bottom: 48px;
 }
@@ -438,8 +426,6 @@ img {
 }
 
 @media screen and (min-width:1366px) {
-
-
     .contents {
         width: 1000px;
         margin: 88px auto;
@@ -462,6 +448,13 @@ img {
 
     h4 {
         font-size: 2rem;
+    }
+
+    .qna-file label,p,
+    a,
+    b {
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
 
     .event-list {

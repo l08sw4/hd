@@ -181,12 +181,9 @@ input[type="checkbox"] {
 }
 
 select {
-    appearance: none;
-}
-
-select:optional {
-    background: url("images/icon-down-arrow.png")no-repeat 95% center;
-    background-size: 10px;
+    height: 100%;
+    font-family: Pretendard, sans-serif;
+    background: white;
 }
 
 /*start*/
@@ -194,11 +191,6 @@ select:optional {
 
 .logins> :nth-child(4) {
     display: flex;
-    cursor: default;
-}
-
-.logins> :nth-child(4) a {
-    cursor: default;
 }
 
 .logins>:nth-child(4) :nth-child(2):before {
@@ -213,17 +205,17 @@ select:optional {
 }
 
 .naver:hover {
-    background: #00942c;
+    background: #00ad34;
 }
 
 .kakao {
     padding: 10px 0;
-    background: rgb(255, 226, 79);
+    background: rgb(255, 224, 66);
     color: #382828;
 }
 
 .kakao:hover {
-    background: #ffd60c;
+    background: #ffd817;
 }
 
 
@@ -343,23 +335,14 @@ select:optional {
         font-size: 2rem;
     }
 
-    p {
+    p,
+    a {
         font-size: 1rem;
         line-height: 1.2rem;
     }
 
-    .join a,
-    .login a {
-        line-height: 1.2rem;
+    a:hover {
         font-size: 1rem;
-    }
-
-    .join a:hover,
-    .login a:hover,
-    .join a:active,
-    .login a:active {
-        color: black;
         line-height: 1.2rem;
-        font-size: 1rem;
     }
 }
