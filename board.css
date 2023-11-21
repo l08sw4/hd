@@ -214,7 +214,7 @@ input[type="file"] {
 }
 
 select {
-    padding: 12px 5%;
+    padding: 12px 5% 12px 0;
     border: 1px solid #ddd;
     width: 100%;
     font-family: Pretendard, sans-serif;
@@ -222,7 +222,7 @@ select {
 }
 
 select:optional {
-    background: url("images/icon-down-arrow.png")no-repeat 95% center;
+    background: url("images/icon-down-arrow.png")no-repeat 90% center;
     background-size: 10px;
 }
 
