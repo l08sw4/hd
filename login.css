@@ -213,17 +213,17 @@ select:optional {
 }
 
 .naver:hover {
-    background: #00ad34;
+    background: #00942c;
 }
 
 .kakao {
     padding: 10px 0;
-    background: rgb(255, 224, 66);
+    background: rgb(255, 226, 79);
     color: #382828;
 }
 
 .kakao:hover {
-    background: #ffd817;
+    background: #ffd60c;
 }
 
 

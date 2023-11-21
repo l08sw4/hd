@@ -462,14 +462,6 @@ img {
         font-size: 2rem;
     }
 
-    .qna-file label,
-    p,
-    a,
-    b {
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
-
     .event-list {
         position: relative;
         padding-top: 140px;

@@ -1212,8 +1212,8 @@ footer> :nth-child(2) {
 
   p,
   b {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 
   main a {
@@ -1436,7 +1436,6 @@ footer> :nth-child(2) {
     width: 300px;
     padding-left: 16px;
   }
-
 
   .reserves {
     width: 600px;
