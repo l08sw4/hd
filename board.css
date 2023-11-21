@@ -224,7 +224,7 @@ select {
 }
 
 select:optional {
-    background: url("images/icon-down-arrow.png")no-repeat 95% center;
+    background: url("images/icon-down-arrow.png")no-repeat 90% center;
     background-size: 10px;
 }
 
