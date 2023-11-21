@@ -94,3 +94,13 @@ function collapse(element) {
     content.style.maxHeight = content.scrollHeight + "px"; // 접혀있는 경우 펼치기
   }
 }
+
+//전체동의
+function selectAll(selectAll)  {
+  const checkboxes 
+       = document.getElementsByName('all');
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
+  })
+}

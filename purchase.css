@@ -168,7 +168,7 @@ input[type="file"] {
 .products> :nth-child(1)> :nth-child(1) {
     height: 600px;
     margin: 0;
-    background: url("images/product-main.jpg")no-repeat center;
+    background: url("images/purchase-main.jpg")no-repeat center;
     background-size: cover;
     position: relative;
 }
