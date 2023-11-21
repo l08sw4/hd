@@ -150,7 +150,7 @@ input[type="text"] {
     background: rgba(0, 0, 0, 0);
     border: 1px solid #ddd;
     background-size: 16px;
-  }
+}
 
 .searchs input[type="text"] {
     font-family: Pretendard, sans-serif;
@@ -438,6 +438,8 @@ img {
 }
 
 @media screen and (min-width:1366px) {
+
+
     .contents {
         width: 1000px;
         margin: 88px auto;
