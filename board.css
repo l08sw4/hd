@@ -221,6 +221,10 @@ select {
     appearance: none;
 }
 
+select:optional {
+    background: url("images/icon-down-arrow.png")no-repeat 95% center;
+    background-size: 10px;
+}
 
 .flexs {
     display: flex;
