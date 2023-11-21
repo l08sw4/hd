@@ -174,9 +174,11 @@ input[type="text"]:focus {
 .story-search input[type="text"]:focus {
     outline: none;
 }
-.searchs input[type="text"]{
+
+.searchs input[type="text"] {
     margin-bottom: 48px;
 }
+
 textarea {
     width: 100%;
     border: 1px solid #ddd;
@@ -466,6 +468,11 @@ img {
         font-size: 2rem;
     }
 
+    select:optional {
+        background: url("images/icon-down-arrow.png")no-repeat 97.5% center;
+        background-size: 10px;
+    }
+
     .event-list {
         position: relative;
         padding-top: 140px;
@@ -515,7 +522,6 @@ img {
     }
 
     .sms>.flexs p {
-        line-height: 3.6rem;
         margin: 0 4px;
     }
 
