@@ -468,11 +468,6 @@ img {
         font-size: 2rem;
     }
 
-    select:optional {
-        background: url("images/icon-down-arrow.png")no-repeat 97.5% center;
-        background-size: 10px;
-    }
-
     .event-list {
         position: relative;
         padding-top: 140px;
