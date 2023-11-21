@@ -29,9 +29,12 @@ function includeHTML() {
           if (this.status == 404) {
             elmnt.innerHTML = "Page not found.";
           }
+          /*remove the attribute, and call this function once more:*/
+
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
 
           // -------------------------------------------------------------------------
-          //내비
           let openss = document.querySelector("#opens");
           openss.addEventListener("click", function () {
             document.querySelector("#opens").style.opacity = "0";
@@ -44,36 +47,9 @@ function includeHTML() {
             document.querySelector("#opens").style.opacity = "1";
           });
 
-          //롤링
-          $(document).ready(function () {
-            var height = $(".roll-top").height();
-            var num = $(".rolling li").length;
-            var max = height * num;
-            var move = 0;
-    
-            function noticeRolling() {
-              move += height;
-              $(".rolling").animate({
-                "top": -move
-              }, 600, function () {
-                if (move >= max) {
-                  $(this).css("top", 0);
-                  move = 0;
-                };
-              });
-            };
-            noticeRollingOff = setInterval(noticeRolling, 1000);
-            $(".rolling").append($(".rolling li").first().clone());
-    
-            $(".rolling_stop").click(function () {
-              clearInterval(noticeRollingOff);
-            });
-            $(".rolling_start").click(function () {
-              noticeRollingOff = setInterval(noticeRolling, 1500);
-            });
-          });
-  
+          // -------------------------------------------------------------------------
 
+          // ---------------------------------
         }
       }
       xhttp.open("GET", file, true);
@@ -85,7 +61,6 @@ function includeHTML() {
     }
   }
 };
-
 
 //탭하면 컨텐츠가 바뀜
 function openCity(evt, cityName) {
@@ -118,4 +93,14 @@ function collapse(element) {
   } else {
     content.style.maxHeight = content.scrollHeight + "px"; // 접혀있는 경우 펼치기
   }
+}
+
+//전체동의
+function selectAll(selectAll)  {
+  const checkboxes 
+       = document.getElementsByName('all');
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
+  })
 }
