@@ -18,7 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-
 img {
   width: 100%;
 }
@@ -59,7 +58,6 @@ h6 {
 p {
   line-height: 1.2rem;
 }
-
 
 a {
   text-decoration: none;
@@ -612,9 +610,6 @@ footer> :nth-child(2) {
   }
 
   /*모바일내비*/
-  .searchs {
-    width: 1200px;
-  }
 
   .top-menu {
     display: none;
