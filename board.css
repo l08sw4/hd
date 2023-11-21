@@ -222,7 +222,7 @@ select {
 }
 
 select:optional {
-    background: url("images/icon-down-arrow.png")no-repeat 90% center;
+    background: url("images/icon-down-arrow.png")no-repeat 80% center;
     background-size: 10px;
 }
 
