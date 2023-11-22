@@ -1230,6 +1230,11 @@ footer> :nth-child(2) {
     width: 100%;
   }
 
+  .margin-side {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   article>div {
     width: 1200px;
     margin: 0 auto;
