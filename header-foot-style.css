@@ -139,90 +139,7 @@ input[type="file"] {
   font-weight: bold;
 }
 
-
-
 /*start*/
-
-/*퀵메뉴*/
-
-#sidebar {
-  text-align: center;
-  position: fixed;
-  background: white;
-  border-radius: 5px;
-  right: -120px;
-  top: 52%;
-  transition: .4s;
-  z-index: 22;
-  width: 120px;
-  border: 1px solid #ddd;
-}
-
-.side-conts> :nth-child(1) {
-  border-radius: 5px 5px 0 0;
-  background: #f3f6fa;
-  padding: 8px;
-  border-bottom: 1px #ccc solid;
-}
-
-.side-conts> :nth-child(2) p {
-  font-size: 0.8rem;
-}
-
-.side-conts> :nth-child(2) {
-  border-bottom: 1px dashed #ddd;
-  padding: 16px 0;
-  margin: 0 4px;
-}
-
-.side-conts> :nth-child(2) * {
-  margin: 4px 0;
-}
-
-.side-conts> :nth-child(3) {
-  padding: 16px 0 24px 0;
-  margin: 0 4px;
-}
-
-.side-conts> :nth-child(3) button {
-  padding: 4px 12px;
-  border-radius: 5px;
-}
-
-.side-conts> :nth-child(3) * {
-  margin: 4px 0;
-}
-
-.side-conts> :nth-child(3)> :nth-child(3) {
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
-/* Don't make blank with id and class */
-#sidebar.act {
-  right: 0;
-}
-
-.side-btn {
-  border: 1px solid black;
-  overflow-x: hidden;
-  position: absolute;
-  right: 119px;
-  top: 40%;
-  background: black;
-  color: white;
-  padding: 0;
-  border-radius: 8px 0 0 8px;
-  cursor: pointer;
-}
-
-.side-btn .active {
-  transform: rotate(180deg);
-}
-
-#side-btn1 {
-  padding: 20px 2px 20px 8px;
-}
 
 /*메인, 헤더*/
 header {
@@ -247,13 +164,6 @@ header {
 
 .right-nav {
   display: flex;
-}
-
-/*검색*/
-.right-nav> :nth-child(1) {
-  z-index: 8;
-  margin: 0 8px;
-  line-height: 1.7rem;
 }
 
 
