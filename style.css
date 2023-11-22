@@ -18,10 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-article>div {
-  margin: 0 5%;
-}
-
 img {
   width: 100%;
 }
@@ -73,10 +69,6 @@ hr {
   margin-top: 16px;
 }
 
-span {
-  font-size: 1.5rem;
-}
-
 .span-small {
   font-size: 0.9rem;
   color: #999;
@@ -122,11 +114,26 @@ input[type="text"]:focus {
 
 input[type="text"] {
   font-family: Pretendard, sans-serif;
+  padding: 12px 5%;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #ddd;
+  background-size: 16px;
+}
+
+.search-icon input[type="text"] {
+  font-family: Pretendard, sans-serif;
   padding: 12px 0;
   background: rgba(0, 0, 0, 0);
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
   border-bottom: 1px solid black;
-  background: url("images/icon-search.png")no-repeat right 80%;
+  background: url("images/icon-search.png")no-repeat right 50%;
   background-size: 16px;
+}
+
+.search-icon input[type="text"]:focus {
+  outline: none;
 }
 
 textarea:focus {
@@ -190,6 +197,62 @@ input[type="file"] {
 .scrollbar::-webkit-scrollbar-track {
   background: rgba(100, 37, 49, 0.1);
   border-radius: 10px;
+}
+
+.margin-side {
+  margin: 0 5%;
+}
+
+/*아이콘*/
+
+.sns,
+.mobLogo {
+  display: flex;
+}
+
+.sns div,
+.mobLogo div {
+  border-radius: 100%;
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  margin-right: 6px;
+  position: relative;
+  opacity: 40%;
+  transition: 0.4s;
+}
+
+.sns div {
+  filter: invert(100%) sepia(11%) saturate(7437%) hue-rotate(255deg) brightness(116%) contrast(112%);
+}
+
+.mobLogo :nth-child(1) img,
+.sns :nth-child(1) img {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  left: 12px;
+  top: 7px;
+}
+
+.mobLogo :nth-child(2) img,
+.mobLogo :nth-child(3) img,
+.sns :nth-child(2) img,
+.sns :nth-child(3) img {
+  position: absolute;
+  left: 7px;
+  top: 6.5px;
+  width: 20px;
+  height: 20px;
+}
+
+.sns div:hover,
+.mobLogo div:hover {
+  opacity: 100%;
+}
+
+.cursurs {
+  cursor: pointer;
 }
 
 /*start*/
@@ -501,27 +564,7 @@ header {
   }
 }
 
-.mobLogo {
-  width: 110px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.2rem;
-  margin-bottom: 36px;
-}
 
-.mobLogo li:hover {
-  color: black;
-  background: white;
-  border: 1px solid black;
-}
-
-.mobLogo li {
-  border: 1px solid #ddd;
-  color:#333;
-  border-radius: 100%;
-  padding: 5px;
-  transition: 0.6s;
-}
 
 /*메인*/
 main {
@@ -601,14 +644,18 @@ main> :nth-child(2)> :nth-child(1) {
 
 main> :nth-child(2)> :nth-child(1) h6 {
   line-height: 1.8rem;
+  width: 140px;
 }
 
-main> :nth-child(2)> :nth-child(1) input[type="text"] {
-  background-size: 16px;
-  font-size: 0.8rem;
-  height: 24px;
-  width: 65%;
+.main-second> :nth-child(1) div {
+  width: 80%;
   max-width: 800px;
+  min-width: 150px;
+}
+
+.main-second> :nth-child(1) div input {
+  width: 100%;
+  padding: 4px 0;
 }
 
 main> :nth-child(2)> :nth-child(2) {
@@ -1169,21 +1216,6 @@ footer> :nth-child(2) {
   margin: 12px 0;
 }
 
-.sns {
-  font-size: 1.2rem;
-}
-
-.sns a {
-  border: 1px solid;
-  padding: 5px;
-  margin-right: 2px;
-  border-radius: 100%;
-}
-
-.sns a:hover {
-  color: white;
-}
-
 .top-btn {
   position: absolute;
   bottom: 30px;
@@ -1194,6 +1226,9 @@ footer> :nth-child(2) {
 
 /*피씨*/
 @media screen and (min-width:1366px) {
+  .products>div {
+    width: 100%;
+  }
 
   article>div {
     width: 1200px;
@@ -1258,9 +1293,7 @@ footer> :nth-child(2) {
   }
 
   /*모바일내비*/
-  .searchs {
-    width: 1200px;
-  }
+
 
   .top-menu {
     display: none;
@@ -1269,7 +1302,6 @@ footer> :nth-child(2) {
   #langs {
     display: block;
   }
-
 
   main> :first-child {
     height: 700px;
@@ -1296,6 +1328,10 @@ footer> :nth-child(2) {
 
   .main-second> :nth-child(1) h6 {
     font-size: 1.4rem;
+  }
+
+  .main-second> :nth-child(1) div {
+    width: 400px;
   }
 
   .main-second> :nth-child(2) {

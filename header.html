@@ -1,6 +1,6 @@
 <head>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 
@@ -12,13 +12,13 @@
 
 	<nav id="pc-nav">
 		<ul>
-			<li><a href="purchase.html">purchase</a></li>
-			<li><a href="login.html">login</a></li>
-			<li><a href="joinus.html">joinus</a></li>
-			<li><a href="remove.html">remove</a></li>
-			<li><a href="faq.html">faq</a></li>
-			<li><a href="qna.html">qna</a></li>
-			<li><a href="news.html">news</a></li>
+			<li onclick="window.location.href='purchase.html'"><a>purchase</a></li>
+			<li onclick="window.location.href='login.html'"><a>login</a></li>
+			<li onclick="window.location.href='joinus.html'"><a>joinus</a></li>
+			<li onclick="window.location.href='remove.html'"><a>remove</a></li>
+			<li onclick="window.location.href='faq.html'"><a>faq</a></li>
+			<li onclick="window.location.href='qna.html'"><a>qna</a></li>
+			<li onclick="window.location.href='news.html'"><a>news</a></li>
 		</ul>
 	</nav>
 
@@ -40,8 +40,8 @@
 			<div>
 				<div class="mobLogin">
 					<h5>로그인 해주세요.</h5>
-					<button><a href="login.html" class="login-small">로그인</a></button>
-					<button><a href="joinus.html" class="join-small">회원가입</a></button>
+					<button onclick="window.location.href='login.html'" class="cursurs"><a class="login-small cursurs">로그인</a></button>
+					<button onclick="window.location.href='joinus.html'"class="cursurs"><a class="join-small">회원가입</a></button>
 				</div>
 				<div>
 					<div class="roll-search">
@@ -58,20 +58,20 @@
 					</div>
 					<input type="text" placeholder="Search">
 					<ul class="mobNavs">
-						<li><a href="index.html">home</a></li>
-						<li><a href="purchase.html">purchase</a></li>
-						<li><a href="login.html">login</a></li>
-						<li><a href="joinus.html">joinus</a></li>
-						<li><a href="remove.html">remove</a></li>
-						<li><a href="faq.html">faq</a></li>
-						<li><a href="qna.html">qna</a></li>
-						<li><a href="news.html">news</a></li>
+						<li onclick="window.location.href='index.html'" class="cursurs"><a>home</a></li>
+						<li onclick="window.location.href='purchase.html'" class="cursurs"><a>purchase</a></li>
+						<li onclick="window.location.href='login.html'" class="cursurs"><a>login</a></li>
+						<li onclick="window.location.href='joinus.html'"class="cursurs"><a>joinus</a></li>
+						<li onclick="window.location.href='remove.html'"class="cursurs"><a>remove</a></li>
+						<li onclick="window.location.href='faq.html'"class="cursurs"><a>faq</a></li>
+						<li onclick="window.location.href='qna.html'"class="cursurs"><a>qna</a></li>
+						<li onclick="window.location.href='news.html'"class="cursurs"><a>news</a></li>
 					</ul>
-					<ul class="mobLogo">
-						<li><a class="xi-youtube-play"></a></li>
-						<li><a class="xi-instagram"></a></li>
-						<li><a class="xi-facebook"></a></li>
-					</ul>
+					<div class="mobLogo">
+						<div><img src="images/icon-facebook.png"></div>
+						<div><img src="images/icon-instagram.png"></div>
+						<div><img src="images/icon-youtube.png"></div>
+					</div>
 				</div>
 			</div>
 		</div>

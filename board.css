@@ -131,11 +131,6 @@ article {
     margin: 4px 0;
 }
 
-.icons {
-    padding: 0 !important;
-    font-size: 5rem;
-    text-align: center;
-}
 
 .pad36 {
     padding-bottom: 36px;
@@ -157,23 +152,6 @@ input[type="text"]:focus {
     outline: none;
 }
 
-.searchs input[type="text"],
-.story-search input[type="text"] {
-    font-family: Pretendard, sans-serif;
-    padding: 12px 0;
-    background: rgba(0, 0, 0, 0);
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid black;
-    background: url("images/icon-search.png")no-repeat right 50%;
-    background-size: 16px;
-}
-
-.searchs input[type="text"]:focus,
-.story-search input[type="text"]:focus {
-    outline: none;
-}
 
 .searchs input[type="text"] {
     margin-bottom: 48px;
@@ -253,6 +231,9 @@ img {
     margin: 4px 0;
 }
 
+.icons img {
+    width: 50px;
+}
 
 /*start*/
 
@@ -280,7 +261,6 @@ img {
     line-height: 3.2rem;
     margin: 0 4px;
 }
-
 
 .qna-file {
     border-bottom: 1px solid #ddd;
@@ -427,8 +407,22 @@ img {
     justify-content: space-between;
 }
 
+.qu-btn button {
+    transition: 0.5s;
+    border-radius: 0;
+    padding: 12px 0;
+    font-weight: bold;
+    font-family: Pretendard, sans-serif;
+    font-weight: 400;
+    border: 1px solid #ddd;
+}
+
 .tagbtn {
     width: 32%;
+}
+
+.qu-btn button:hover {
+    background: #f9f4eb;
 }
 
 .tabmenu-color {
