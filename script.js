@@ -52,6 +52,7 @@ function includeHTML() {
           // ---------------------------------
         }
       }
+
       xhttp.open("GET", file, true);
       xhttp.send();
       /*exit the function:*/
@@ -60,6 +61,34 @@ function includeHTML() {
       return;
     }
   }
+  //모바일 내비 안 롤링 
+  $(document).ready(function () {
+    var height = $(".roll-top").height();
+    var num = $(".rolling li").length;
+    var max = height * num;
+    var move = 0;
+
+    function noticeRolling() {
+      move += height;
+      $(".rolling").animate({
+        "top": -move
+      }, 600, function () {
+        if (move >= max) {
+          $(this).css("top", 0);
+          move = 0;
+        };
+      });
+    };
+    noticeRollingOff = setInterval(noticeRolling, 1000);
+    $(".rolling").append($(".rolling li").first().clone());
+
+    $(".rolling_stop").click(function () {
+      clearInterval(noticeRollingOff);
+    });
+    $(".rolling_start").click(function () {
+      noticeRollingOff = setInterval(noticeRolling, 1500);
+    });
+  });
 };
 
 //탭하면 컨텐츠가 바뀜
@@ -96,10 +125,9 @@ function collapse(element) {
 }
 
 //전체동의
-function selectAll(selectAll)  {
-  const checkboxes 
-       = document.getElementsByName('all');
-  
+function selectAll(selectAll) {
+  const checkboxes = document.getElementsByName('all');
+
   checkboxes.forEach((checkbox) => {
     checkbox.checked = selectAll.checked;
   })
