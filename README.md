@@ -1,4 +1,6 @@
 # hd
+<img width="100%" src="![mosaXr6I77](https://github.com/l08sw4/hd/assets/150978908/48ef5b3b-fdb1-4aca-a878-caac00792507)"/>
+
 
 ISSUE 01 / 인덱스- 메인 슬라이드
 사용자들이 모바일에서 스크롤을 빠르게 내리기 때문에
