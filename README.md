@@ -1,5 +1,5 @@
 # hd
-<img width="100%" src="![mosaXr6I77](https://github.com/l08sw4/hd/assets/150978908/48ef5b3b-fdb1-4aca-a878-caac00792507)"/>
+<img width="100%" src="[![mosaXr6I77](https://github.com/l08sw4/hd/assets/150978908/48ef5b3b-fdb1-4aca-a878-caac00792507)](https://github.com/l08sw4/hd/assets/150978908/8f1b0a29-c330-4c9e-b5e9-da94ad03807a)"/>
 
 
 ISSUE 01 / 인덱스- 메인 슬라이드
