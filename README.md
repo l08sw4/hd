@@ -1,7 +1,7 @@
 # hd
-<img width="100%" src="[![mosaXr6I77](https://github.com/l08sw4/hd/assets/150978908/48ef5b3b-fdb1-4aca-a878-caac00792507)](https://github.com/l08sw4/hd/assets/150978908/8f1b0a29-c330-4c9e-b5e9-da94ad03807a)"/>
-
-
+<p align="center">
+  <img src="![mosaXr6I77](https://github.com/l08sw4/hd/assets/150978908/3ff296a2-5848-4885-b0aa-4b783a7ae531)">
+</p>
 ISSUE 01 / 인덱스- 메인 슬라이드
 사용자들이 모바일에서 스크롤을 빠르게 내리기 때문에
 스크롤을 모두 내리기 전에 슬라이드를 최소한 한 장 이상 보여주고 싶었습니다. 
